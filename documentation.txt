@@ -1,0 +1,40 @@
+Multi Guard
+
+1. Create New Laravel Project
+2. Connect Database in phpmyadmin and .env file
+3. Install UI
+4. Install Npm
+
+User Route
+**Login/Register/Dashboard
+1. 1. Create Admin Table (Model Admin and Migration)
+
+Admin Route (Different function call with User)
+**Login/Dashboard
+1. Create Admin Table (Model Admin and Migration)
+2. Admin.php (fill function like User.php)
+3. Update Column to Table (create necessary column and migrate)
+4. Admin doesn't need to register 
+(Create account on the database phpmyadmin, Be careful with admin,admins)
+5. Create Admin Guard at auth.php
+6. After creating guard, route with middleware  
+7. Create those view blade file and design the views
+8. Create Admin Controller
+9. After creating the controller, 
+import admin controller  to the web.php and 
+don't forget to update Authenticate.php/RedirectIfAuthenticated.php (App\Http\Midddleware\...)
+10.  Form validation using route/controller/view blade
+11. Design admin dashboard
+12. Prevent Back History
+
+Doctor Route (Same with Admin function call)
+**Login/Register/Dashboard
+1. Create Doctor Table (Model Admin and Migration)
+2. Create Doctor Controller
+3. After creating the controller, import doctor controller  to the web.php and route with middleware
+4. Create those view blade file and design the views
+5. Create Doctor Guard at auth.php
+6. Update Authenticate.php/RedirectIfAuthenticated.php (App\Http\Midddleware\...)
+7.  Form validation using route/controller/view blade
+8. Design admin dashboard
+9. Prevent Back History
